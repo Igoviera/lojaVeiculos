@@ -36,7 +36,7 @@ const {deletarVeiculo}:any = useContext(CartContext);
           </div>
 
         <div>
-          <img className={styles.imgCarro} alt={nome} src={image}/>
+          <img className={styles.imgCarro} alt={nome} src={`https://app-loja-api.herokuapp.com/${image}`}/>
           <p>{marca} {nome}</p>
           <p>Preço: {valor} </p>
           <p>Descrição: {desc}</p>
