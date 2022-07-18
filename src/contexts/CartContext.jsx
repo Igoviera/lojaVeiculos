@@ -30,7 +30,7 @@ const onSubmit = (e) => {
     const formData = new FormData();
     formData.append('image', data);
 
-    axios.post(`http://localhost:4000/veiculo`,data, {headers: {"Content-Type":"multipart/form-data"}})
+    axios.post(`https://app-loja-api.herokuapp.com/veiculo/veiculo/`,data, {headers: {"Content-Type":"multipart/form-data"}})
     .then(response => {
         if(response.status === 200){
             //return navigate("/")//
