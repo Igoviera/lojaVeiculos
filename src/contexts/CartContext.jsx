@@ -30,7 +30,7 @@ const onSubmit = (e) => {
     const formData = new FormData();
     formData.append('image', data);
 
-    axios.post(`https://app-loja-api.herokuapp.com/veiculo/veiculo/`,data, {headers: {"Content-Type":"multipart/form-data"}})
+    axios.post(`https://app-loja-api.herokuapp.com/veiculo`,data, {headers: {"Content-Type":"multipart/form-data"}})
     .then(response => {
         if(response.status === 200){
             //return navigate("/")//
@@ -47,7 +47,7 @@ const onSubmit = (e) => {
 const [veiculos, setVeiculos] = useState([])
 
 useEffect(() => {
-    axios.get(`https://app-loja-api.herokuapp.com/veiculo/veiculos`)
+    axios.get(`https://app-loja-api.herokuapp.com/veiculos`)
     .then(response => {
         setVeiculos(response.data.veiculos)
     })
@@ -58,14 +58,14 @@ useEffect(() => {
 
 //Deletar um veiculo
 function deletarVeiculo(id){
-    axios.delete(`https://app-loja-api.herokuapp.com/veiculo/${id}`)
+    axios.delete(`https://app-loja-api.herokuapp.com/${id}`)
     window.location.reload()
 };
 
 
 //Editar veiculo
 function editarVeiculo(id){
-    axios.put(`https://app-loja-api.herokuapp.com/veiculo/${id}`)
+    axios.put(`https://app-loja-api.herokuapp.com/${id}`)
     window.location.reload()
 }
 
