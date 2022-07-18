@@ -47,7 +47,7 @@ const onSubmit = (e) => {
 const [veiculos, setVeiculos] = useState([])
 
 useEffect(() => {
-    axios.get(`http://localhost:4000/`)
+    axios.get(`https://app-loja-api.herokuapp.com/veiculo/veiculos`)
     .then(response => {
         setVeiculos(response.data.veiculos)
     })
@@ -58,14 +58,14 @@ useEffect(() => {
 
 //Deletar um veiculo
 function deletarVeiculo(id){
-    axios.delete(`http://localhost:4000/${id}`)
+    axios.delete(`https://app-loja-api.herokuapp.com/veiculo/${id}`)
     window.location.reload()
 };
 
 
 //Editar veiculo
 function editarVeiculo(id){
-    axios.put(`http://localhost:4000/${id}`)
+    axios.put(`https://app-loja-api.herokuapp.com/veiculo/${id}`)
     window.location.reload()
 }
 
