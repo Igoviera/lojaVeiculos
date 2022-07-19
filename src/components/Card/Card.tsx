@@ -37,12 +37,12 @@ const {deletarVeiculo}:any = useContext(CartContext);
 
         <div>
           <img className={styles.imgCarro} alt={nome} src={`https://app-loja-api.herokuapp.com/${image}`}/>
-          <p>{marca} {nome}</p>
-          <p>Preço: {valor} </p>
-          <p>Descrição: {desc}</p>
-          <p>Ano: {ano}</p>
-          <p>Cor: {cor}</p>
-          <p>Placa: {placa}</p>
+          <p className={styles.marca}>{marca} {nome}</p>
+          <p><span className={styles.desc}>Preço:</span> {valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} </p>
+          <p><span className={styles.desc}>Descrição:</span> Descrição: {desc}</p>
+          <p><span className={styles.desc}>Ano:</span> Ano: {ano}</p>
+          <p><span className={styles.desc}>Cor:</span> Cor: {cor}</p>
+          <p><span className={styles.desc}>Placa:</span> Placa: {placa}</p>
         </div>
       </div>
     </div>

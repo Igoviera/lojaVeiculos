@@ -1,11 +1,12 @@
 .containerBtn{
     display: flex;
     justify-content: center;
-    width: 364px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    width: 350px;
     padding-left: 20px;
     padding-right: 20px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .btnAdicionar{
