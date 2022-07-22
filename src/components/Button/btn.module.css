@@ -16,14 +16,15 @@
     /*margin-left: 266px;
     margin-right: 266px;
     margin-top: 34px;*/
-    background: rgba(101, 220, 199, 0.8);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,55,1) 100%);
     border-radius: 50px;
     border: none;
     font-size: 30px;
-    color: #020202;
+    color: #ffffff;
 }
 .btnAdicionar:hover{
     background-color: transparent;
-    border: solid 2px rgba(101, 220, 199, 0.8);;
-    color: rgba(101, 220, 199, 0.8);;
+    border: solid 2px rgba(32, 228, 107, 0.8);
+    color: rgba(253, 253, 253, 0.8);
 }

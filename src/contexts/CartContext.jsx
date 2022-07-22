@@ -26,9 +26,10 @@ const onSubmit = (e) => {
         image: e.target.elements.image.files[0]
     };
 
-
     const formData = new FormData();
     formData.append('image', data);
+
+    
 
     axios.post(`https://app-loja-api.herokuapp.com/veiculo`,data, {headers: {"Content-Type":"multipart/form-data"}})
     .then(response => {

@@ -1,0 +1,21 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.267);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ul{
+    display: flex;
+    padding: 10px;
+    gap: 20px; 
+  
+}
+li{
+    cursor: pointer;
+    list-style: none;
+    
+}
