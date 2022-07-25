@@ -17,11 +17,12 @@ function Adicionar(){
             </Link>
             
             <div className={styles.Subcontainer}>
+                <div>
+                    <h2 className={styles.titulo}>Adicionar veiculo</h2>
+                </div>
                 
-                <h2 className={styles.titulo}>Adicionar veiculo</h2>
-
-                <form onSubmit={onSubmit} action="/some-endpoint" method='POST' encType='multipart/form-data'>
-                    <div className={styles.composAdicionar}>
+                <form  className={styles.form} onSubmit={onSubmit} action="/some-endpoint" method='POST' encType='multipart/form-data'>
+                    <div>
                         <h3>Nome:</h3>
                         <input className={styles.input} type='text' nome='nome' id="nome" placeholder='nome do veiculo'></input>
                     </div>
@@ -50,7 +51,7 @@ function Adicionar(){
                
                     <div>
                         <h3>Descrição:</h3>
-                        <input className={styles.input} type='text' nome='desc' id="desc" placeholder='Descrição do veiculo'></input>
+                        <textarea className={styles.textArea} type='text' nome='desc' id="desc" placeholder='Descrição do veiculo'></textarea>
                     </div>
                     <div className={styles.btnsalvarr}>
                         <button className={styles.btnSalvar}>Salvar</button>

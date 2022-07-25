@@ -2,8 +2,8 @@
 .veiculo{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 57px;
-    padding-right: 57px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .veiculo > div {

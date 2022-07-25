@@ -8,6 +8,7 @@ import Filtro from './pages/Filtro/Filtro';
 import Editar from './pages/Editar/Editar';
 import { CartProvider } from './contexts/CartContext';
 import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 
 
 
@@ -23,6 +24,7 @@ root.render(
         <Route path='/filtro' element={<Filtro/>}/>
         <Route path='/editar/:id' element={<Editar/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
       </Routes>
     </BrowserRouter>
   </CartProvider>

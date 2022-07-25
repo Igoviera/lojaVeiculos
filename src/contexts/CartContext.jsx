@@ -47,6 +47,7 @@ const onSubmit = (e) => {
 //Listando todos os veiculos
 const [veiculos, setVeiculos] = useState([])
 
+
 useEffect(() => {
     axios.get(`https://app-loja-api.herokuapp.com/veiculos`)
     .then(response => {
@@ -56,6 +57,8 @@ useEffect(() => {
         console.log("ops! deu error"+error)
     })
 },[])
+
+
 
 //Deletar um veiculo
 function deletarVeiculo(id){
@@ -70,9 +73,11 @@ function editarVeiculo(id){
     window.location.reload()
 }
 
+const [busca, setBusca] = useState('');
+
 
     return (
-        <CartContext.Provider value={{veiculos,onSubmit,deletarVeiculo,editarVeiculo}}>
+        <CartContext.Provider value={{veiculos,busca,setBusca,onSubmit,deletarVeiculo,editarVeiculo}}>
             {children}
         </CartContext.Provider>
     )

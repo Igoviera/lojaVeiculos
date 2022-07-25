@@ -24,14 +24,14 @@ const {deletarVeiculo}:any = useContext(CartContext);
       <div> 
         <div className={styles.icons}>
           <Link to={{pathname:`/editar/${_id}`}}>
-            <img className={styles.icon} src="https://img.icons8.com/ios-glyphs/30/ffffff/edit--v1.png"/>
+            <img className={styles.icon} src="https://img.icons8.com/ios-glyphs/30/000000/edit--v1.png"/>
           </Link>
           
-          <img className={styles.icon} onClick={() => deletarVeiculo(_id)} src="https://img.icons8.com/ios-glyphs/60/ffffff/delete.png"/>
+          <img className={styles.icon} onClick={() => deletarVeiculo(_id)} src="https://img.icons8.com/ios-glyphs/60/000000/delete.png"/>
           
           <div onClick={likee} className={styles.icon}>{done === true ? 
-          <img className={styles.icon} src="https://img.icons8.com/fluency/48/ffffff/pixel-heart.png"/>: 
-          <img className={styles.icon} src="https://img.icons8.com/ios-filled/50/ffffff/pixel-heart.png"></img>
+          <img className={styles.icon} src="https://img.icons8.com/fluency/48/000000/pixel-heart.png"/>: 
+          <img className={styles.icon} src="https://img.icons8.com/ios-filled/50/000000/pixel-heart.png"></img>
             }</div>
           </div>
 
@@ -39,10 +39,10 @@ const {deletarVeiculo}:any = useContext(CartContext);
           <img className={styles.imgCarro} alt={nome} src={`https://app-loja-api.herokuapp.com/${image}`}/>
           <p className={styles.marca}>{marca} {nome}</p>
           <p><span className={styles.desc}>Preço:</span> {valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} </p>
-          <p><span className={styles.desc}>Descrição:</span> Descrição: {desc}</p>
-          <p><span className={styles.desc}>Ano:</span> Ano: {ano}</p>
-          <p><span className={styles.desc}>Cor:</span> Cor: {cor}</p>
-          <p><span className={styles.desc}>Placa:</span> Placa: {placa}</p>
+          <p><span className={styles.desc}>Descrição:</span> {desc}</p>
+          <p><span className={styles.desc}>Ano:</span> {ano}</p>
+          <p><span className={styles.desc}>Cor:</span> {cor}</p>
+          <p><span className={styles.desc}>Placa:</span> {placa}</p>
         </div>
       </div>
     </div>
