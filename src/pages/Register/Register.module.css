@@ -1,36 +1,65 @@
 .containerLogin{
     display: flex;
     justify-content: center;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(50,19,161,1) 51%, rgba(0,212,255,1) 100%);
+    align-items: center;
+    background: #e2e2e2;
+    color: black;
     height: 100vh;
-    color: white;
+    border: solid 1px red;
+}
+.titulo{
+    font-weight: bolder;
+    border-bottom: solid 2px rgba(45,253,55,1);
+    margin-bottom: 30px;
+}
+.voltar{
+    position: absolute;
 }
 .login{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 60vh;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: auto;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 1em rgb(49, 49, 49);
+    border: solid 1px red;
+    margin-left: 15px;
+    margin-right: 15px;   
 }
 .ipt{
     outline: none;
-    height: 50px;
+    height: 45px;
     border-radius: 10px;
     border: none;
     padding: 10px;
     margin-bottom: 10px;
+    background: #e2e2e2;
+    
 }
 .btnEtrar{
+    margin-top: 20px;
+    margin-bottom: 15px;
     cursor: pointer;
     border-radius: 10px;
     border: none;
-    height: 50px;
+    height: 40px;
     font-size: 20px;
-    color: white;
-    background: rgb(34,193,195);
+    color: black;
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,55,1) 100%);
+}
+.link{
+    color: blue;
+}
+
+.status{
+    text-align: center;
+    background-color: rgba(45,253,55,1);
+    position: absolute;
+    width: 80%;
+    
 }
 
 form{

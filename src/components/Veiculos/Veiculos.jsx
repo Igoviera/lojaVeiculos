@@ -5,7 +5,7 @@ import { CartContext } from '../../contexts/CartContext';
 
 function Veiculo(){
 
-    const {veiculos,busca} = useContext(CartContext)   
+    const {veiculos,busca,loading,} = useContext(CartContext)   
 
     /*const veiculosFiltrados = veiculos.filter((veiculo) => veiculo.startsWith(busca))*/
 
@@ -21,6 +21,8 @@ function Veiculo(){
         
          <div className={styles.veiculo}>
             {veiculos.length === 0 && <h1>Não há nenhum ítem</h1>}
+
+
             
             {veiculosFiltrado.map((veiculo,index) => (
             

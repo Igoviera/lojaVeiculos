@@ -13,7 +13,6 @@ function Header(){
                         <ul>
                             <Link to={'/login'}><li>Login</li></Link>
                             <li>Cadastrar</li>
-                            <li>Contato</li>
                         </ul>
                     </nav> 
                 </div>
