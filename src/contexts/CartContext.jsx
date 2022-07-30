@@ -71,7 +71,7 @@ const onSubmit = (e) => {
     const formData = new FormData();
     formData.append('image', data);
 
-    axios.post(`https://app-loja-api.herokuapp.com/veiculos`,data, {headers: {"Content-Type":"multipart/form-data"}})
+    axios.post(`https://app-loja-api.herokuapp.com/veiculo`,data, {headers: {"Content-Type":"multipart/form-data"}})
     .then(response => {
         if(response.status === 200){
            //navigate('/')

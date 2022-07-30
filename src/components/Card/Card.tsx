@@ -28,7 +28,7 @@ const {deletarVeiculo}:any = useContext(CartContext);
             <img className={styles.icon} src="https://img.icons8.com/ios-glyphs/30/000000/edit--v1.png"/>
           </Link>
           
-          <img className={styles.icon} onClick={() => deletarVeiculo(_id)} src="https://img.icons8.com/ios-glyphs/60/000000/delete.png"/>
+          <img className={styles.icon} onClick={()=> deletarVeiculo(_id)} src="https://img.icons8.com/ios-glyphs/60/000000/delete.png"/>
           
           <div onClick={likee} className={styles.icon}>{done === true ? 
           <img className={styles.icon} src="https://img.icons8.com/windows/32/FF0000/filled-heart.png"/>: 
@@ -47,7 +47,7 @@ const {deletarVeiculo}:any = useContext(CartContext);
           </div>
           <div className={styles.anoKm}>
             <p className={styles.desc}>Ano: {ano}</p>
-            <p className={styles.desc}>Km:{km}</p>
+            <p className={styles.desc}>Km: {km}</p>
           </div>
           <button>Comprar</button>
         </div>
