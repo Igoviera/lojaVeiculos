@@ -32,7 +32,7 @@ function Veiculo(){
                         _id={veiculo._id}
                         nome={veiculo.nome}
                         marca={veiculo.marca}
-                        cor={veiculo.cor}
+                        km={veiculo.km}
                         ano={veiculo.ano}
                         placa={veiculo.placa}
                         valor={veiculo.valor}

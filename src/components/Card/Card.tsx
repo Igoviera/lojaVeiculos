@@ -4,7 +4,8 @@ import { useContext} from "react";
 import { CartContext } from "../../contexts/CartContext";
 import { useState } from 'react'
 
-function Card({nome,_id,marca,cor,ano,placa,valor,desc,image,}:any){
+
+function Card({nome,_id,marca,km,ano,placa,valor,desc,image,}:any){
 
 let coracaoPreto = 'coracao1'
 let coracaoVermelho = 'coracao2'
@@ -30,19 +31,25 @@ const {deletarVeiculo}:any = useContext(CartContext);
           <img className={styles.icon} onClick={() => deletarVeiculo(_id)} src="https://img.icons8.com/ios-glyphs/60/000000/delete.png"/>
           
           <div onClick={likee} className={styles.icon}>{done === true ? 
-          <img className={styles.icon} src="https://img.icons8.com/fluency/48/000000/pixel-heart.png"/>: 
-          <img className={styles.icon} src="https://img.icons8.com/ios-filled/50/000000/pixel-heart.png"></img>
+          <img className={styles.icon} src="https://img.icons8.com/windows/32/FF0000/filled-heart.png"/>: 
+          <img className={styles.icon} src="https://img.icons8.com/windows/32/000000/filled-heart.png"></img>
             }</div>
           </div>
 
-        <div>
-          <img className={styles.imgCarro} alt={nome} src={`https://app-loja-api.herokuapp.com/${image}`}/>
-          <p className={styles.marca}>{marca} {nome}</p>
-          <p><span className={styles.desc}>Preço:</span> {valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} </p>
-          <p><span className={styles.desc}>Descrição:</span> {desc}</p>
-          <p><span className={styles.desc}>Ano:</span> {ano}</p>
-          <p><span className={styles.desc}>Cor:</span> {cor}</p>
-          <p><span className={styles.desc}>Placa:</span> {placa}</p>
+        <div className={styles.containerInformacaoes}>
+          <div>
+            <img className={styles.imgCarro} alt={nome} src={`https://app-loja-api.herokuapp.com/${image}`}/>
+            <p className={styles.marca}>{marca} {nome}</p>
+            <span className={styles.desc}>Descrição:{desc}</span> 
+          </div>
+          <div className={styles.Informacaoes}> 
+            <span className={styles.valor}>{valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} </span>   
+          </div>
+          <div className={styles.anoKm}>
+            <p className={styles.desc}>Ano: {ano}</p>
+            <p className={styles.desc}>Km:{km}</p>
+          </div>
+          <button>Comprar</button>
         </div>
       </div>
     </div>
