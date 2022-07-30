@@ -1,9 +1,10 @@
-
-.Subcontainer{
+.containerGeral{
     display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 70%;
+    justify-content:center;
+    padding: 15px;
+}
+
+.containerAdicionar{
     background: white;
     border-radius: 10px;
     padding-top: 30px;
@@ -11,21 +12,29 @@
     color: #000000;
     margin-top: 30px;
 }
+
 .voltar{
     position: absolute;
 }
 
-.form{
-    display: flex;
-    margin-left: 15px;
-    margin-right: 15px;
-    gap: 20px;
-   
+.formContainer{
+    margin: 10px; 
 }
 
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding-bottom: 30px;
+}
+.form > div {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
 
 .input{
-    width: 100%;
     background: #e2e2e2;
     border-radius: 10px;
     padding: 5px;
@@ -34,11 +43,11 @@
     border: none;
 }
 
-.spanError{
+/*.spanError{
     color: red;
     position: absolute;
     margin-top: 0px;
-}
+}*/
 
 .btnSalvar{
     cursor: pointer;
@@ -48,49 +57,37 @@
     border: none;
     margin-bottom: 20px;
     padding: 5px;
-    width: 200px;
 }
-.btnSalvar:hover{
+/*.btnSalvar:hover{
     background: transparent;
     border: solid 2px rgba(101, 220, 199, 0.8);
     color: rgba(101, 220, 199, 0.8);
-}
-.btnsalvarr{
-    display: flex;
-    justify-content: end;
-    margin-right: 50px;
-    margin-top: 30px;  
-}
+}*/
+
 
 .titulo{
     font-weight: bold;
     text-align: center;
     border-bottom: solid 2px rgba(45,253,55,1);
+    margin-bottom: 40px;
 }
 
 .textArea{
     resize: none;
-    width: 60%;
     height: 100px;
     padding: 5px;
     background: #e2e2e2;
+    border-radius: 10px;
     border: none;
+   
 }
 
-@media only screen and (max-width: 850px) {
+/*@media only screen and (max-width: 850px) {
     .container {
         background-color: #FFFFFF;
         margin-top: 40px;
         margin-bottom: 50px;
         width: 85%; 
-    }
-    .Subcontainer {
-      background-color: transparent;
-      padding-left: 0px;
-      padding-right: 30px;
-      width: 100%;
-      height: 1000px;
-      margin-top: 10px;
     }
     .input{
         font-size: 18px;
@@ -100,4 +97,4 @@
     .btnsalvarr{
         margin-right: 30px;
     }
-  }
+  }*/

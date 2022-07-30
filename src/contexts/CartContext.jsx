@@ -60,7 +60,7 @@ const onSubmit = (e) => {
     const data = {
         nome: e.target.elements.nome.value,
         marca: e.target.elements.marca.value,
-        cor: e.target.elements.cor.value,
+        km: e.target.elements.cor.value,
         ano: e.target.elements.ano.value,
         placa: e.target.elements.placa.value,
         valor: e.target.elements.valor.value,
@@ -71,7 +71,7 @@ const onSubmit = (e) => {
     const formData = new FormData();
     formData.append('image', data);
 
-    axios.post(`http://localhost:4000/veiculo`,data, {headers: {"Content-Type":"multipart/form-data"}})
+    axios.post(`https://app-loja-api.herokuapp.com/veiculos`,data, {headers: {"Content-Type":"multipart/form-data"}})
     .then(response => {
         if(response.status === 200){
            //navigate('/')
