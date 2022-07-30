@@ -47,7 +47,7 @@ const {deletarVeiculo}:any = useContext(CartContext);
           </div>
           <div className={styles.anoKm}>
             <p className={styles.desc}>Ano: {ano}</p>
-            <p className={styles.desc}>Km:{km}</p>
+            <p className={styles.desc}>Km: {km}</p>
           </div>
           <button>Comprar</button>
         </div>
